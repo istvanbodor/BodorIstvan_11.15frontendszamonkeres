@@ -36,8 +36,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
         for (let e of quotes) {
             let the = 'the';
             let thee ='The';
-            li.textContent = e.replace('the', the.bold);
-            li.textContent = e.replace('The', thee.bold);
+           li.textContent = e.replace('the', the.bold);
+            li.textContent = li.textContent.replace('The', thee.bold);
+           
             qlista.appendChild(li);
 
         }
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     document.getElementById('thegomb').addEventListener('click', ()=>{
 
-           abcadatBetoltes();
+             abcadatBetoltes();
            let mukodjlista =[];
             for(let e of lista)
             {

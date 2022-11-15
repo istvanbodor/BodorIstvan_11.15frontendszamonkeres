@@ -82,6 +82,25 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 
 
+    document.getElementById('darabgomb').addEventListener('click', ()=>{
+
+        abcadatBetoltes();
+        let szerzo = document.getElementById('szerzo').value;
+        const count = lista.reduce((accumulator, obj) => {
+            if (obj.author = szerzo) {
+              return accumulator + 1;
+            }
+          
+            return accumulator;
+          }, 0);
+        document.getElementById('szamkimenet').value = count;
+
+    });
+
+    
+
+
+
 
 
 

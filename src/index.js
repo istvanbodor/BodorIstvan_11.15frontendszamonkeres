@@ -1,7 +1,7 @@
 import './style.css';
 
 let lista;
-let mukodjlista =[];
+
 
 
 document.addEventListener('DOMContentLoaded', ()=>{
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     document.getElementById('thegomb').addEventListener('click', ()=>{
 
            abcadatBetoltes();
-
+           let mukodjlista =[];
             for(let e of lista)
             {
                 mukodjlista.push(e.quote);
@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         }
         let alma = segedlista.join(', ');
-        let p = document.getElementById('hossz');
-        p.appendChild(alma);
+        let p = document.getElementById('hossz').textContent = alma;
+        
 
     });
 
